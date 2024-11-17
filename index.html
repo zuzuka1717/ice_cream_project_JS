@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link>
+    <meta charset="utf-8">
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <title>Ice cream</title>
+  </head>
+  <body>
+
+<div class="wrapper">
+
+  <div class="container-scoops">
+
+<section class="section-scoops">
+
+<div class="scoop btn-scoop-first" id="first"></div>
+<div class="scoop btn-scoop-second" id="second"></div>
+<div class="scoop btn-scoop-third" id="third"></div>
+
+</section>
+
+
+<section class="section-bowl">
+  <div class="bowl"></div>
+  <div class="base"></div>
+</section>
+
+</div>
+
+<div class="split-line"></div>
+
+<section class="scoops-select">
+  
+    <select class="select-box scoop-selection" id="btn-scoop-first" onchange="selectTaste(value, id)">
+      <option hidden>Scoop 1</option>
+      <option value="kiwi">Kiwi</option>
+      <option value="berries">Berries</option>
+      <option value="vanilla">Vanilla</option>
+    </select>
+
+
+    <select class="select-box scoop-selection" id="btn-scoop-second" onchange="selectTaste(value, id)">
+      <option hidden>Scoop 2</option>
+      <option value="kiwi">Kiwi</option>
+      <option value="berries">Berries</option>
+      <option value="vanilla">Vanilla</option>
+      </select>
+
+
+    <select class="select-box scoop-selection" id="btn-scoop-third" onchange="selectTaste(value, id)">
+      <option hidden>Scoop 3</option>
+      <option value="kiwi">Kiwi</option>
+      <option value="berries">Berries</option>
+      <option value="vanilla">Vanilla</option>
+      </select>
+    </select>
+
+
+</section>
+
+
+<section class="topping-select">
+  <button class="select-box topping-btn" id='topping-first' onclick="selectTopping(id)"> Topping 1
+    
+  </button>
+  <button class="select-box topping-btn" id='topping-third' onclick="selectTopping(id)"> Topping 3
+    
+  </button>
+</section>
+
+
+
+</div>
+  </body>
+</html>
